@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Disemvowler</title>
+	</head>
+	<body>
+		<h1 id="demo">
+			Welcome to my new website!
+		</h1>
+		<p id="demo1">
+			My name is Joseph Richard Scott. I was born on the sixteenth of March, year two-thousand.
+		</p>
+		<p id="demo2">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+		</p>
+		<button onclick="myFunction()">Disemvowel it!</button>
+		<button onclick="myFunction2()">Interactive Disemvowelment!</button>
+		<p id="demo3"></p>
+	</body>
+	<script>
+		function myFunction() {
+		  var str = document.getElementById("demo").innerHTML; 
+		  var res = str.replace(/[aeiou]/g, "");
+		  document.getElementById("demo").innerHTML = res;
+		  var str = document.getElementById("demo1").innerHTML; 
+		  var res = str.replace(/[aeiou]/g, "");
+		  document.getElementById("demo1").innerHTML = res;
+		  var str = document.getElementById("demo2").innerHTML; 
+		  var res = str.replace(/[aeiou]/g, "");
+		  document.getElementById("demo2").innerHTML = res;
+		  var str = document.getElementById("demo3").innerHTML; 
+		  var res = str.replace(/[aeiou]/g, "");
+		  document.getElementById("demo3").innerHTML = res;
+		}
+
+		function myFunction2() {
+          var sentence = prompt("Please enter a sentence", "example lmao");
+		  if (sentence != null) {
+    	  document.getElementById("demo3").innerHTML =
+    	  sentence;
+  		  }
+  		  var str = document.getElementById("demo3").innerHTML; 
+		  var res = str.replace(/[aeiou]/g, "");
+		}
+</script>
+</html>
